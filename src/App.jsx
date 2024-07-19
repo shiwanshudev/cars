@@ -5,11 +5,11 @@ import CarValue from "./components/CarValue";
 
 export default function App() {
   return (
-    <div>
+    <>
       <CarForm />
-      <CarSearch />
       <CarList />
+      <CarSearch />
       <CarValue />
-    </div>
+    </>
   );
 }

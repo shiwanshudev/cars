@@ -1,3 +1,3 @@
 export default function CarSearch() {
-  return <div>Car Search</div>;
+  return <h1>CarSearch</h1>;
 }

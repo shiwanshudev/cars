@@ -1,3 +1,3 @@
 export default function CarList() {
-  return <div>Car List</div>;
+  return <h1>CarList</h1>;
 }

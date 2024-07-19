@@ -1,3 +1,3 @@
 export default function CarValue() {
-  return <div>Car Value</div>;
+  return <h1>CarValue</h1>;
 }
