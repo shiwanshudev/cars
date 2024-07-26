@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { addCar } from "./CarsSlice";
 
 const formSlice = createSlice({
   name: "form",
@@ -13,6 +14,12 @@ const formSlice = createSlice({
     changeCost(state, action) {
       state.cost = action.payload;
     },
+  },
+  extraReducers(builder) {
+    builder.addCase(addCar, (state, action) => {
+      state.name = "";
+      state.cost = 0;
+    }); // watch for cars/addCar | whenever we dispatch, all slices receive the action types to match so even if it is from cars/addCar, form slice also receive it
   },
 });
 
